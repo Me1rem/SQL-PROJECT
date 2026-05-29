@@ -46,7 +46,6 @@ This project answers these questions using historical energy and economic data f
 
 | Metric        | Value          |
 | ------------- | -------------- |
-| Countries     | 34 |
 | Continents    | 6              |
 | Years Covered | 2000–2022      |
 
