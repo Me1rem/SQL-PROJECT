@@ -46,10 +46,9 @@ This project answers these questions using historical energy and economic data f
 
 | Metric        | Value          |
 | ------------- | -------------- |
-| Countries     | [INSERT COUNT] |
+| Countries     | 34 |
 | Continents    | 6              |
 | Years Covered | 2000–2022      |
-| Total Records | [INSERT COUNT] |
 
 ---
 
@@ -454,12 +453,25 @@ Expected Benefits:
 # Results & Business Recommendations
 
 ### Findings
+### Electricity Generation Trends
+![Electricity Generation Trends](genline.png)
 
-* Renewable energy generation has increased significantly since 2000.
-* Fossil fuels remain the dominant electricity source globally.
-* Countries with higher GDP per capita generally have near-universal electricity access.
-* Asia contributes the largest share of global electricity generation.
-* Electricity access remains uneven across developing regions.
+- **Electricity Generation Growth**: All continents experienced an increase in electricity generation, with Asia leading due to rapid industrialization in China and India.
+- **Electricity Access & Generation**: Countries with higher access to electricity tend to rely more on renewables.
+
+![Electricity Generation Types](gentype.png)
+- **Fossil Fuel Dominance**: Despite growth in renewables, fossil fuels remain the dominant source of electricity.
+Over the years, there was a gradual increase in the share of electricity generated from renewable sources, with fossil fuels remaining dominant in many countries. Nuclear generation, however, showed little overall growth.
+
+### Top Electricity Generators (2022)
+![Top Electricity Generators](genbar.png)
+
+- **Top 10 Electricity Generators (2022)**: China, the US, India, Russia, and Japan.
+
+### GDP Per Capita and Electricity Access
+![GDP vs Electricity Access](gdpscatter.png)
+- **GDP and Electricity Access**: A positive correlation exists between higher GDP per capita and increased electricity access from renewables.
+Higher GDP per capita was found to be positively correlated with higher access to electricity, especially from renewables, indicating that wealthier nations are investing more in clean energy technologies.
 
 ### Recommendations
 
@@ -467,6 +479,7 @@ Expected Benefits:
 2. Improve energy infrastructure in developing countries.
 3. Encourage energy diversification to improve resilience.
 4. Use GDP and electricity access indicators together for policy planning.
+
 
 ---
 
@@ -527,9 +540,18 @@ Global-Energy-Analysis/
 └── LICENSE
 ```
 
----
+### Challenges & Solutions
+I encountered a couple of challenges in the analysis including:
+- **Missing Data**: Filled missing values with appropriate defaults.
+- **Data Format Issues**: Used dynamic SQL for data transformation.
+- **Duplicate Data**: Identified and removed duplicates using primary keys.
+- **Complex Joins**: Preprocessed data to ensure seamless merging.
 
----
+### Data Sources
+- [World Bank](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)
+- [Our World in Data - Energy](https://ourworldindata.org/energy-production-consumption)
+- [Our World in Data - Electricity Access](https://ourworldindata.org/energy-access)
+- [Our World in Data - Energy Problems](https://ourworldindata.org/worlds-energy-problem)
 
 ### Author
 
